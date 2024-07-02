@@ -25,7 +25,7 @@ public class ImageEncryptDecrypt {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the encryption/decryption key (integer):");
+        System.out.println("Enter the password key (integer):");
         int key = scanner.nextInt();
 
         System.out.println("Enter the mode ('encrypt' or 'decrypt'):");
