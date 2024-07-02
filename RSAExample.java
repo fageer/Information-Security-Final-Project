@@ -36,8 +36,8 @@ public class RSAExample {
         return null;
     }
 
-    // Main method to demonstrate encryption and decryption
-    public static void main(String[] args) {
+    // Method to demonstrate encryption and decryption
+    public static void run() {
         try {
             // Generate a new RSA key pair
             KeyPair keyPair = generateKeyPair();
@@ -62,8 +62,7 @@ public class RSAExample {
             // Decrypt the message
             String decryptedString = decrypt(encryptedString, privateKey);
             System.out.println("Decrypted String: " + decryptedString);
-            sc.close();
-
+            
         } catch (Exception e) {
             e.printStackTrace();
         }

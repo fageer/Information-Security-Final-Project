@@ -22,7 +22,7 @@ public class ImageEncryptDecrypt {
         return resultImage;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the encryption/decryption key (integer):");
@@ -66,8 +66,6 @@ public class ImageEncryptDecrypt {
 
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            scanner.close();
         }
     }
 }

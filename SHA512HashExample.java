@@ -1,5 +1,4 @@
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 import java.util.Base64;
 
@@ -22,13 +21,13 @@ public class SHA512HashExample {
         return null;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         try {
             // Get user input
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter String to Hash : ");
             String originalString = sc.nextLine();
-            sc.close();
+
             // Print the original string
             System.out.println("Original String: " + originalString);
 
@@ -36,6 +35,7 @@ public class SHA512HashExample {
             String hashedString = hashWithSHA512(originalString);
             System.out.println("SHA-512 Hash (Base64 encoded): " + hashedString);
 
+            // sc.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
